@@ -1,0 +1,106 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Filter_1
+Version: O-2018.06-SP4
+Date   : Sun Nov 21 22:38:34 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: k_3_1_reg[0][3]
+              (rising edge-triggered flip-flop clocked by my_clk)
+  Endpoint: c_0_reg[18]
+            (rising edge-triggered flip-flop clocked by my_clk)
+  Path Group: my_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Filter_1           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock my_clk (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  k_3_1_reg[0][3]/CK (DFF_X1)                             0.00       0.00 r
+  k_3_1_reg[0][3]/Q (DFF_X1)                              0.11       0.11 r
+  mult_77_2/a[3] (Filter_1_DW_mult_tc_98)                 0.00       0.11 r
+  mult_77_2/U643/ZN (XNOR2_X1)                            0.08       0.19 r
+  mult_77_2/U613/ZN (OAI22_X1)                            0.04       0.23 f
+  mult_77_2/U690/Z (XOR2_X1)                              0.07       0.31 f
+  mult_77_2/U663/ZN (AOI21_X1)                            0.07       0.37 r
+  mult_77_2/U660/ZN (OAI21_X1)                            0.04       0.41 f
+  mult_77_2/U634/ZN (INV_X1)                              0.03       0.44 r
+  mult_77_2/U542/ZN (AOI21_X1)                            0.03       0.47 f
+  mult_77_2/U541/ZN (NOR2_X1)                             0.04       0.51 r
+  mult_77_2/U772/ZN (AND2_X1)                             0.05       0.56 r
+  mult_77_2/U365/ZN (OAI22_X1)                            0.03       0.60 f
+  mult_77_2/U771/ZN (AOI21_X1)                            0.06       0.66 r
+  mult_77_2/U425/ZN (OAI22_X1)                            0.04       0.70 f
+  mult_77_2/U693/ZN (OAI211_X1)                           0.04       0.74 r
+  mult_77_2/U692/ZN (OAI211_X1)                           0.06       0.80 f
+  mult_77_2/U370/ZN (NAND2_X1)                            0.04       0.84 r
+  mult_77_2/U688/ZN (AOI21_X1)                            0.03       0.87 f
+  mult_77_2/U682/ZN (AOI21_X1)                            0.08       0.95 r
+  mult_77_2/U391/ZN (OAI22_X1)                            0.04       0.99 f
+  mult_77_2/U666/ZN (NAND2_X1)                            0.04       1.03 r
+  mult_77_2/U390/ZN (NAND2_X1)                            0.03       1.06 f
+  mult_77_2/U676/Z (XOR2_X1)                              0.07       1.13 f
+  mult_77_2/product[15] (Filter_1_DW_mult_tc_98)          0.00       1.13 f
+  add_7_root_add_0_root_add_77_8/B[15] (Filter_1_DW01_add_63)
+                                                          0.00       1.13 f
+  add_7_root_add_0_root_add_77_8/U295/ZN (OR2_X1)         0.06       1.19 f
+  add_7_root_add_0_root_add_77_8/U288/ZN (AND2_X1)        0.04       1.23 f
+  add_7_root_add_0_root_add_77_8/U287/ZN (XNOR2_X1)       0.06       1.29 f
+  add_7_root_add_0_root_add_77_8/SUM[15] (Filter_1_DW01_add_63)
+                                                          0.00       1.29 f
+  add_3_root_add_0_root_add_77_8/B[15] (Filter_1_DW01_add_115)
+                                                          0.00       1.29 f
+  add_3_root_add_0_root_add_77_8/U284/ZN (NOR2_X1)        0.05       1.33 r
+  add_3_root_add_0_root_add_77_8/U278/ZN (OAI21_X1)       0.04       1.37 f
+  add_3_root_add_0_root_add_77_8/U289/ZN (INV_X1)         0.03       1.40 r
+  add_3_root_add_0_root_add_77_8/U274/ZN (OAI21_X1)       0.03       1.43 f
+  add_3_root_add_0_root_add_77_8/U285/ZN (XNOR2_X1)       0.07       1.49 f
+  add_3_root_add_0_root_add_77_8/SUM[16] (Filter_1_DW01_add_115)
+                                                          0.00       1.49 f
+  add_1_root_add_0_root_add_77_8/B[16] (Filter_1_DW01_add_113)
+                                                          0.00       1.49 f
+  add_1_root_add_0_root_add_77_8/U280/ZN (NAND2_X1)       0.04       1.53 r
+  add_1_root_add_0_root_add_77_8/U253/ZN (OAI21_X1)       0.04       1.57 f
+  add_1_root_add_0_root_add_77_8/U279/ZN (INV_X1)         0.03       1.60 r
+  add_1_root_add_0_root_add_77_8/U245/ZN (OAI21_X1)       0.03       1.63 f
+  add_1_root_add_0_root_add_77_8/U276/ZN (XNOR2_X1)       0.06       1.69 f
+  add_1_root_add_0_root_add_77_8/SUM[17] (Filter_1_DW01_add_113)
+                                                          0.00       1.69 f
+  add_0_root_add_0_root_add_77_8/B[17] (Filter_1_DW01_add_92)
+                                                          0.00       1.69 f
+  add_0_root_add_0_root_add_77_8/U279/ZN (NOR2_X1)        0.05       1.74 r
+  add_0_root_add_0_root_add_77_8/U277/ZN (OAI21_X1)       0.03       1.77 f
+  add_0_root_add_0_root_add_77_8/U276/ZN (INV_X1)         0.03       1.80 r
+  add_0_root_add_0_root_add_77_8/U281/ZN (OAI21_X1)       0.03       1.83 f
+  add_0_root_add_0_root_add_77_8/U282/ZN (XNOR2_X1)       0.06       1.88 f
+  add_0_root_add_0_root_add_77_8/SUM[18] (Filter_1_DW01_add_92)
+                                                          0.00       1.88 f
+  U1688/ZN (NAND2_X1)                                     0.03       1.91 r
+  U1689/ZN (OAI21_X1)                                     0.03       1.94 f
+  c_0_reg[18]/D (DFF_X1)                                  0.01       1.95 f
+  data arrival time                                                  1.95
+
+  clock my_clk (rise edge)                                2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  c_0_reg[18]/CK (DFF_X1)                                 0.00       2.00 r
+  library setup time                                     -0.05       1.95
+  data required time                                                 1.95
+  --------------------------------------------------------------------------
+  data required time                                                 1.95
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
